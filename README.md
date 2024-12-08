@@ -6,7 +6,7 @@
     <br>
 </h1>
 <a href="https://nexvoo.cc">
-    <img alt="NexVoo logo" src="https://i.ibb.co/hZFLrP0/repo.png" style="width: 100%">
+    <img alt="NexVoo logo" src="https://i.ibb.co/D9MWkzp/nex.png" style="width: 100%">
 </a>
 <br/>
 <p align="center">
