@@ -1,6 +1,6 @@
 [package]
 edition = "2021"
-name    = "HiveSpace_server_native"
+name    = "NexVoo_server_native"
 version = "1.0.0"
 
 [lib]
