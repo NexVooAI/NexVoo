@@ -1,8 +1,8 @@
 {
-  "name": "@Wasper/server",
+  "name": "@NexVoo/server",
   "private": true,
   "version": "0.14.0",
-  "description": "Wasper Node.js server",
+  "description": "NexVoo Node.js server",
   "type": "module",
   "bin": {
     "run-test": "./scripts/run-test.ts"
@@ -143,10 +143,10 @@
       "MAILER_HOST": "0.0.0.0",
       "MAILER_PORT": "1025",
       "MAILER_USER": "noreply@toeverything.info",
-      "MAILER_PASSWORD": "Wasper",
+      "MAILER_PASSWORD": "NexVoo",
       "MAILER_SENDER": "noreply@toeverything.info",
       "FEATURES_EARLY_ACCESS_PREVIEW": "false",
-      "DEPLOYMENT_TYPE": "Wasper"
+      "DEPLOYMENT_TYPE": "NexVoo"
     }
   },
   "nodemonConfig": {
