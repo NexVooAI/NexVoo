@@ -14,12 +14,12 @@
       "command": "yarn run dev:local"
     },
     {
-      "name": "Launch HiveSpace Cloud",
+      "name": "Launch NexVoo Cloud",
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "yarn",
       "cwd": "${workspaceFolder}",
-      "runtimeArgs": ["workspace", "@HiveSpace/server", "dev"]
+      "runtimeArgs": ["workspace", "@NexVoo/server", "dev"]
     }
   ]
 }
