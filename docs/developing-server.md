@@ -1,4 +1,4 @@
-This document explains how to start server (@HiveSpace/server) locally with Docker
+This document explains how to start server (@NexVoo/server) locally with Docker
 
 > **Warning**:
 >
@@ -9,14 +9,14 @@ This document explains how to start server (@HiveSpace/server) locally with Dock
 
 ```
 docker pull postgres
-docker run --rm --name HiveSpace-postgres -e POSTGRES_PASSWORD=HiveSpace -p 5432:5432 -v ~/Documents/postgres:/var/lib/postgresql/data postgres
+docker run --rm --name NexVoo-postgres -e POSTGRES_PASSWORD=NexVoo -p 5432:5432 -v ~/Documents/postgres:/var/lib/postgresql/data postgres
 ```
 
 ### Optionally, use a dedicated volume
 
 ```
-docker volume create HiveSpace-postgres
-docker run --rm --name HiveSpace-postgres -e POSTGRES_PASSWORD=HiveSpace -p 5432:5432 -v HiveSpace-postgres:/var/lib/postgresql/data postgres
+docker volume create NexVoo-postgres
+docker run --rm --name NexVoo-postgres -e POSTGRES_PASSWORD=HiveSpace -p 5432:5432 -v HiveSpace-postgres:/var/lib/postgresql/data postgres
 ```
 
 ### mailhog (for local testing)
@@ -38,17 +38,17 @@ docker exec -it CONTAINER_ID psql -U postgres ## change container_id
 psql (15.3 (Debian 15.3-1.pgdg120+1))
 Type "help" for help.
 
-postgres=# CREATE USER HiveSpace WITH PASSWORD 'HiveSpace';
+postgres=# CREATE USER NexVoo WITH PASSWORD 'NexVoo';
 CREATE ROLE
-postgres=# ALTER USER HiveSpace WITH SUPERUSER;
+postgres=# ALTER USER NexVoo WITH SUPERUSER;
 ALTER ROLE
-postgres=# CREATE DATABASE HiveSpace;
+postgres=# CREATE DATABASE NexVoo;
 CREATE DATABASE
 postgres=# \du
                                    List of roles
  Role name |                         Attributes                         | Member of
 -----------+------------------------------------------------------------+-----------
- HiveSpace    | Superuser                                                  | {}
+ NexVoo    | Superuser                                                  | {}
  postgres  | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
 ```
 
@@ -59,8 +59,8 @@ In the following setup, we assume you have postgres server running at localhost:
 When logging in via email, you will see the mail arriving at localhost:8025 in a browser.
 
 ```
-DATABASE_URL="postgresql://HiveSpace:HiveSpace@localhost:5432/HiveSpace"
-MAILER_SENDER="noreply@HiveSpaceAI.info"
+DATABASE_URL="postgresql://NexVoo:NexVoo@localhost:5432/NexVoo"
+MAILER_SENDER="noreply@NexVooAI.info"
 MAILER_USER="auth"
 MAILER_PASSWORD="auth"
 MAILER_HOST="localhost"
@@ -70,8 +70,8 @@ MAILER_PORT="1025"
 ## Prepare prisma
 
 ```
-yarn workspace @HiveSpace/server prisma db push
-yarn workspace @HiveSpace/server data-migration run
+yarn workspace @NexVoo/server prisma db push
+yarn workspace @NexVoo/server data-migration run
 ```
 
 Note, you may need to do it again if db schema changed.
@@ -79,21 +79,21 @@ Note, you may need to do it again if db schema changed.
 ### Enable prisma studio
 
 ```
-yarn workspace @HiveSpace/server prisma studio
+yarn workspace @NexVoo/server prisma studio
 ```
 
 ## Build native packages (you need to setup rust toolchain first)
 
 ```
 # build native
-yarn workspace @HiveSpace/server-native build
-yarn workspace @HiveSpace/native build
+yarn workspace @NexVoo/server-native build
+yarn workspace @NexVoo/native build
 ```
 
 ## start server
 
 ```
-yarn workspace @HiveSpace/server dev
+yarn workspace @NexVoo/server dev
 ```
 
 ## start core (web)
@@ -104,4 +104,4 @@ yarn dev
 
 ## Done
 
-Now you should be able to start developing HiveSpace with server enabled.
+Now you should be able to start developing NexVoo with server enabled.
