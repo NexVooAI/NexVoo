@@ -1,5 +1,5 @@
-import { getRuntimeConfig } from '@affine/cli/src/webpack/runtime-config';
-import { setupGlobal } from '@wasper/env/global';
+import { getRuntimeConfig } from '@NexVoo/cli/src/webpack/runtime-config';
+import { setupGlobal } from '@NexVoo/env/global';
 
 globalThis.runtimeConfig = getRuntimeConfig({
   distribution: 'browser',
