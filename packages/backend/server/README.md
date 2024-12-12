@@ -11,7 +11,7 @@ yarn
 ### Build Native binding
 
 ```bash
-yarn workspace @dexis/server-native build
+yarn workspace @NexVoo/server-native build
 ```
 
 ### Run server
