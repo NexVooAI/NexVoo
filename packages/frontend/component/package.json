@@ -1,5 +1,5 @@
 {
-  "name": "@HiveSpace/component",
+  "name": "@NexVoo/component",
   "private": true,
   "main": "./src/index.ts",
   "exports": {
