@@ -19,12 +19,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@HiveSpace-legacy/0.6.1-beta.1@workspace:tests/HiveSpace-legacy/0.6.1-beta.1":
+"@NexVoo-legacy/0.6.1-beta.1@workspace:tests/NexVoo-legacy/0.6.1-beta.1":
   version: 0.0.0-use.local
-  resolution: "@HiveSpace-legacy/0.6.1-beta.1@workspace:tests/HiveSpace-legacy/0.6.1-beta.1"
+  resolution: "@NexVoo-legacy/0.6.1-beta.1@workspace:tests/NexVoo-legacy/0.6.1-beta.1"
   dependencies:
-    "@HiveSpace-test/fixtures": "workspace:*"
-    "@HiveSpace-test/kit": "workspace:*"
+    "@NexVoo-test/fixtures": "workspace:*"
+    "@NexVoo-test/kit": "workspace:*"
     "@playwright/test": "npm:^1.44.0"
     express: "npm:^4.19.2"
     http-proxy-middleware: "npm:^3.0.0"
@@ -32,12 +32,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@HiveSpace-legacy/0.7.0-canary.18@workspace:tests/HiveSpace-legacy/0.7.0-canary.18":
+"@NexVoo-legacy/0.7.0-canary.18@workspace:tests/NexVoo-legacy/0.7.0-canary.18":
   version: 0.0.0-use.local
-  resolution: "@HiveSpace-legacy/0.7.0-canary.18@workspace:tests/HiveSpace-legacy/0.7.0-canary.18"
+  resolution: "@HiveSpace-legacy/0.7.0-canary.18@workspace:tests/NexVoo-legacy/0.7.0-canary.18"
   dependencies:
-    "@HiveSpace-test/fixtures": "workspace:*"
-    "@HiveSpace-test/kit": "workspace:*"
+    "@NexVoo-test/fixtures": "workspace:*"
+    "@NexVoo-test/kit": "workspace:*"
     "@playwright/test": "npm:^1.44.0"
     express: "npm:^4.19.2"
     http-proxy-middleware: "npm:^3.0.0"
@@ -45,12 +45,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@HiveSpace-legacy/0.8.0-canary.7@workspace:tests/HiveSpace-legacy/0.8.0-canary.7":
+"@NexVoo-legacy/0.8.0-canary.7@workspace:tests/HiveSpace-legacy/0.8.0-canary.7":
   version: 0.0.0-use.local
-  resolution: "@HiveSpace-legacy/0.8.0-canary.7@workspace:tests/HiveSpace-legacy/0.8.0-canary.7"
+  resolution: "@HiveSpace-legacy/0.8.0-canary.7@workspace:tests/NexVoo-legacy/0.8.0-canary.7"
   dependencies:
-    "@HiveSpace-test/fixtures": "workspace:*"
-    "@HiveSpace-test/kit": "workspace:*"
+    "@NexVoo-test/fixtures": "workspace:*"
+    "@NexVoo-test/kit": "workspace:*"
     "@playwright/test": "npm:^1.44.0"
     express: "npm:^4.19.2"
     http-proxy-middleware: "npm:^3.0.0"
@@ -58,12 +58,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@HiveSpace-legacy/0.8.4@workspace:tests/HiveSpace-legacy/0.8.4":
+"@NexVoo-legacy/0.8.4@workspace:tests/NexVoo-legacy/0.8.4":
   version: 0.0.0-use.local
-  resolution: "@HiveSpace-legacy/0.8.4@workspace:tests/HiveSpace-legacy/0.8.4"
+  resolution: "@NexVoo-legacy/0.8.4@workspace:tests/NexVoo-legacy/0.8.4"
   dependencies:
-    "@HiveSpace-test/fixtures": "workspace:*"
-    "@HiveSpace-test/kit": "workspace:*"
+    "@NexVoo-test/fixtures": "workspace:*"
+    "@NexVoo-test/kit": "workspace:*"
     "@playwright/test": "npm:^1.44.0"
     express: "npm:^4.19.2"
     http-proxy-middleware: "npm:^3.0.0"
@@ -71,7 +71,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@HiveSpace-test/HiveSpace-cloud@workspace:tests/HiveSpace-cloud":
+"@NexVoo-test/HiveSpace-cloud@workspace:tests/NexVoo-cloud":
   version: 0.0.0-use.local
   resolution: "@HiveSpace-test/HiveSpace-cloud@workspace:tests/HiveSpace-cloud"
   dependencies:
