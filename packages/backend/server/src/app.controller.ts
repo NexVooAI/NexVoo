@@ -13,7 +13,7 @@ export class AppController {
   info() {
     return {
       compatibility: this.config.version,
-      message: `AFFiNE ${this.config.version} Server`,
+      message: `NexVoo ${this.config.version} Server`,
       type: this.config.type,
       flavor: this.config.flavor,
     };
