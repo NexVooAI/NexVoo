@@ -1,5 +1,5 @@
 {
-  "name": "@HiveSpace/server-native",
+  "name": "@NexVoo/server-native",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "root": "packages/backend/native",
