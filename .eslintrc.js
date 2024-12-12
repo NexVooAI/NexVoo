@@ -12,7 +12,7 @@ const createPattern = packageName => [
     allowTypeImports: false,
   },
   {
-    group: [`@HiveSpace/${packageName}`],
+    group: [`@NexVoo/${packageName}`],
     message: 'Do not import package itself',
     allowTypeImports: false,
   },
@@ -32,9 +32,9 @@ const createPattern = packageName => [
     importNames: ['useNavigate'],
   },
   {
-    group: ['@HiveSpace/env/constant'],
+    group: ['@NexVoo/env/constant'],
     message:
-      'Do not import from @HiveSpace/env/constant. Use `environment.isDesktop` instead',
+      'Do not import from @NexVoo/env/constant. Use `environment.isDesktop` instead',
     importNames: ['isDesktop'],
   },
 ];
