@@ -2,7 +2,7 @@
   "name": "NexVoo",
   "version": "0.14.0",
   "private": true,
-  "author": "HiveSpaceai",
+  "author": "NexVooai",
   "license": "MIT",
   "workspaces": [
     ".",
