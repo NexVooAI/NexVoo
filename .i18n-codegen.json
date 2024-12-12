@@ -12,7 +12,7 @@
       },
       "generator": {
         "type": "i18next/react-hooks",
-        "hooks": "useHiveSpaceI18N",
+        "hooks": "useNexVooI18N",
         "emitTS": true,
         "shouldUnescape": true
       }
