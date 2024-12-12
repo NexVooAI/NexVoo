@@ -46,10 +46,10 @@ export const FunctionalityModules = [
 ];
 
 export class AppModuleBuilder {
-  private readonly modules: HiveSpaceModule[] = [];
+  private readonly modules: NexVooModule[] = [];
   constructor(private readonly config: Config) {}
 
-  use(...modules: HiveSpaceModule[]): this {
+  use(...modules: NexVooModule[]): this {
     modules.forEach(m => {
       const requirements = getOptionalModuleMetadata(m, 'requires');
       // if condition not set or condition met, include the module
@@ -68,7 +68,7 @@ export class AppModuleBuilder {
           new Logger(name).warn(
             `${name} is not enabled because of the required configuration is not satisfied.`,
             'Unsatisfied configuration:',
-            ...nonMetRequirements.map(config => `  HiveSpace.${config}`)
+            ...nonMetRequirements.map(config => `  NexVoo.${config}`)
           );
           return;
         }
@@ -91,7 +91,7 @@ export class AppModuleBuilder {
 
   useIf(
     predicator: (config: Config) => boolean,
-    ...modules: HiveSpaceModule[]
+    ...modules: NexVoo[]
   ): this {
     if (predicator(this.config)) {
       this.use(...modules);
@@ -112,7 +112,7 @@ export class AppModuleBuilder {
 }
 
 function buildAppModule() {
-  const factor = new AppModuleBuilder(HiveSpace);
+  const factor = new AppModuleBuilder(NexVoo);
 
   factor
     // common fundamental modules
@@ -147,7 +147,7 @@ function buildAppModule() {
     );
 
   // plugin modules
-  HiveSpace.plugins.enabled.forEach(name => {
+  NexVoo.plugins.enabled.forEach(name => {
     const plugin = REGISTERED_PLUGINS.get(name as AvailablePlugins);
     if (!plugin) {
       throw new Error(`Unknown plugin ${name}`);
