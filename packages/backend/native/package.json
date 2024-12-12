@@ -1,5 +1,5 @@
 {
-  "name": "@HiveSpace/server-native",
+  "name": "@NexVoo/server-native",
   "version": "0.14.0",
   "engines": {
     "node": ">= 10.16.0 < 11 || >= 11.8.0"
