@@ -22,5 +22,5 @@
   },
   "updateContentCommand": "bash ./.devcontainer/build.sh",
   "postCreateCommand": "bash ./.devcontainer/setup-user.sh",
-  "postStartCommand": ["yarn dev", "yarn workspace @HiveSpace/server dev"]
+  "postStartCommand": ["yarn dev", "yarn workspace @NexVoo/server dev"]
 }
