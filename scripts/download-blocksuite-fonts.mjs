@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 // eslint-disable-next-line @typescript-eslint/no-restricted-imports
-import { CanvasTextFonts } from '@wasperai/blocks/dist/surface-block/consts.js';
+import { CanvasTextFonts } from '@nexvooai/blocks/dist/surface-block/consts.js';
 
 const fontPath = join(
   fileURLToPath(import.meta.url),
