@@ -1,9 +1,9 @@
 // Convenient way to map environment variables to config values.
-HiveSpace.ENV_MAP = {
-  HiveSpace_SERVER_PORT: ['port', 'int'],
-  HiveSpace_SERVER_HOST: 'host',
-  HiveSpace_SERVER_SUB_PATH: 'path',
-  HiveSpace_SERVER_HTTPS: ['https', 'boolean'],
+NexVoo.ENV_MAP = {
+  NexVoo_SERVER_PORT: ['port', 'int'],
+  NexVoo_SERVER_HOST: 'host',
+  NexVoo_SERVER_SUB_PATH: 'path',
+  NexVoo_SERVER_HTTPS: ['https', 'boolean'],
   DATABASE_URL: 'db.url',
   ENABLE_CAPTCHA: ['auth.captcha.enable', 'boolean'],
   CAPTCHA_TURNSTILE_SECRET: ['auth.captcha.turnstile.secret', 'string'],
