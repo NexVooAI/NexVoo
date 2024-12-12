@@ -1,5 +1,5 @@
 {
-  "name": "HiveSpace",
+  "name": "NexVoo",
   "version": "0.14.0",
   "private": true,
   "author": "HiveSpaceai",
@@ -11,18 +11,18 @@
     "docs/reference",
     "tools/@types/*",
     "tests/*",
-    "tests/HiveSpaceai/*"
+    "tests/NexVooai/*"
   ],
   "engines": {
     "node": "<21.0.0"
   },
   "scripts": {
-    "dev": "yarn workspace @HiveSpaceai/cli dev",
-    "dev:electron": "yarn workspace @HiveSpaceai/electron dev",
-    "build": "yarn nx build @HiveSpaceai/web",
-    "build:electron": "yarn nx build @HiveSpaceai/electron",
-    "build:server-native": "yarn nx run-many -t build -p @HiveSpaceai/server-native",
-    "start:web-static": "yarn workspace @HiveSpaceai/web static-server",
+    "dev": "yarn workspace @NexVooai/cli dev",
+    "dev:electron": "yarn workspace @NexVooai/electron dev",
+    "build": "yarn nx build @NexVooai/web",
+    "build:electron": "yarn nx build @NexVooai/electron",
+    "build:server-native": "yarn nx run-many -t build -p @NexVooai/server-native",
+    "start:web-static": "yarn workspace @NexVooai/web static-server",
     "serve:test-static": "yarn exec serve tests/fixtures --cors -p 8081",
     "lint:eslint": "cross-env NODE_OPTIONS=\"--max-old-space-size=8192\" eslint . --ext .js,mjs,.ts,.tsx --cache",
     "lint:eslint:fix": "yarn lint:eslint --fix",
